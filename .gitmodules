@@ -1,0 +1,3 @@
+[submodule "themes/pelican-gezinsbond"]
+	path = themes/pelican-gezinsbond
+	url = https://github.com/visibilityspots/pelican-gezinsbond
