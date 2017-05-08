@@ -32,7 +32,7 @@ SIDEBAR_DIGEST = 'Dit is de webstek van de Gezinsbond afdeling Humbeek'
 FAVICON = '/theme/images/favicon.ico'
 DISPLAY_PAGES_ON_MENU = True
 MENUITEMS = (
-    ('HOME', SITEURL),
+    ('HOME', '/'),
     ('TWEEDEHANDSBEURS', '/pages/tweedehandsbeurs.html'),
     ('CONTACT', '/pages/contact.html'),
     )
