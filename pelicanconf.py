@@ -29,6 +29,7 @@ DEFAULT_PAGINATION = False
 THEME = "themes/pelican-gezinsbond"
 
 SIDEBAR_DIGEST = 'Dit is de webstek van de Gezinsbond afdeling Humbeek'
+DISPLAY_SUMMARY = '5'
 FAVICON = '/theme/images/favicon.ico'
 DISPLAY_PAGES_ON_MENU = True
 MENUITEMS = (
