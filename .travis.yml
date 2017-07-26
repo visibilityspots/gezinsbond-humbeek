@@ -7,21 +7,6 @@ install:
 script:
 - make clean
 - make github-travis
-- make clean
-- make aws-create
-deploy:
-  provider: s3
-  access_key_id: "$AWS_ACCESS_KEY_ID"
-  secret_access_key: "$AWS_SECRET_ACCESS_KEY"
-  bucket: gezinsbond-humbeek.be
-  region: eu-west-1
-  skip_cleanup: true
-  local-dir: output
-  acl: public_read
-  cache_control: "max-age=21600"
-after_deploy:
-  - aws configure set preview.cloudfront true
-  - aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_DISTRIBUTION_ID --paths "/*"
 notifications:
   email:
     on_failure: change
